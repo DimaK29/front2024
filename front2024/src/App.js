@@ -1,14 +1,12 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ShoppingListDetail from "./components/ShoppingListDetail";
+import React, { Suspense } from "react";
+import Toolbar from "./components/Toolbar";
+
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/shopping-list/:id" element={<ShoppingListDetail />} />
-      </Routes>
-    </Router>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Toolbar />
+    </Suspense>
   );
 }
 

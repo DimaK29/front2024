@@ -1,10 +1,18 @@
-export const shoppingList = {
-  id: 1,
-  title: "Vánoční nákupy",
-  items: [
-    { id: 1, name: "Jablka", quantity: 3 },
-    { id: 2, name: "Banány", quantity: 5 },
-    { id: 3, name: "Chléb", quantity: 1 },
-    { id: 4, name: "Mléko", quantity: 2 },
-  ],
-};
+export const shoppingLists = [
+  {
+    id: 1,
+    name: "Groceries",
+    owner: "u1",
+    members: ["u2", "u3"],
+    items: [{ id: 1, name: "Milk", resolved: false }],
+    archived: false,
+  },
+  {
+    id: 2,
+    name: "Electronics",
+    owner: "u2",
+    members: ["u1"],
+    items: [{ id: 1, name: "Laptop", resolved: false }],
+    archived: true,
+  },
+];
